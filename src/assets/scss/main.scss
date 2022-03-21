@@ -1,0 +1,120 @@
+@import "variable";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gideon+Roman&family=Noto+Sans:wght@700&family=Noto+Serif+Display:ital,wght@0,200;0,400;0,600;0,800;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+.all-container{
+  max-width: 100%;
+  position: relative;
+
+  .header-container{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+    background-color: #101820;
+    .header{
+      max-width: 100%;
+      width: 1440px;
+      margin: 0 auto;
+
+      .header-content{
+        padding: {
+          top: 10px;
+          bottom: 10px;
+        }
+        color: white;
+        font-size: 1.6em;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .top-btn{ position: absolute; background-color: #27323E; top: 88.5%; color: white; left: 92%; width: 50px; height: 50px;
+            text-align: center; font-size: 1.5em; border-radius: 25px; cursor: pointer; transition: all 0.2s linear;
+
+    &:hover{  transform: scale(150%) }
+
+    p{ margin-top: 17%; }
+  }
+/*=====================================================Header==============================================*/
+.all-body { width: 100%;   background-color: #F8F9FA; }
+  .body-container{
+  width: 1440px;
+  margin: 0 auto;
+    padding: {
+      top: 40px;
+      bottom: 40px;
+    };
+
+
+  .body-content{
+    display: flex;
+    flex-direction: column;
+  }
+    .first-content{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .picture{ width: 100px; height: 120px; background-color: #53565A; border-radius: 10px }
+    .info{ @font-face {
+      font-family: 'MaruBuri-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    } font-size: 1.5em; margin-left: 20px; font-weight: 550; line-height: 30px; }
+
+    .separate{ height: 20px; background-color: #27323E; margin-bottom: 40px; }
+
+    .second-content{ margin: 0 auto; font-family: 'Bebas Neue', cursive; font-size: 2em; font-weight: bold;
+      p{ transition: 0.3s linear; width: 150px; text-align: center; position: relative}
+      p:hover{ transform: translateY(-20px); transition: 0.3s linear; box-shadow: 10px 10px 20px #53565A; border-radius: 50px }
+
+    }
+
+    .project-left{ display: flex; align-items: center; margin-top: 35px; font-family: 'Bebas Neue', cursive }
+    .project-right{ display: flex; justify-content: flex-end; align-items: center; margin-top: 35px; font-family: 'Bebas Neue', cursive }
+    .project-picture{ height: 200px; width: 50%; border-radius: 10px; background-color: #53565A  }
+    .right-name{ margin-right: 20px; font-size: 2.2em; font-weight: bolder  }
+    .left-name{ margin-left: 20px; font-size: 2.2em; font-weight: bolder  }
+
+}
+
+/*==============================================footer===========================================*/
+  .footer-container{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+    background-color: #101820;
+    .footer{
+      max-width: 100%;
+      width: 1440px;
+      margin: 0 auto;
+
+      .footer-content{
+        padding: {
+          top: 10px;
+          bottom: 10px;
+        }
+        .foot-title{
+          color: white;
+          font-size: 1.6em;
+          font-weight: bolder;
+          position: relative;
+          width: 150px;
+          &:after{ content: ''; position: absolute; width: 10%; height: 1px; background-color: white; top: 110%; left: 0;transition: all .5s linear; }
+          &:hover:after{ width: 120%; background-color: #ffea5f }
+        }
+        .contact-info{
+          margin-top: 20px;
+          color: white;
+          line-height: 30px;
+          font-size: 1.2em;
+          width: 100px;
+        }
+        .contact-info p{ cursor: pointer; &:hover{ color: #ffea5f } }
+        .copyright{ color: white; text-align: center }
+
+      }
+    }
+  }
+}
+
