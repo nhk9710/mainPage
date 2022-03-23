@@ -126,9 +126,10 @@
 </template>
 
 <script>
+import { defineComponent } from "vue";
 
 
-export default {
+export default defineComponent({
   mounted() {
     $(window).scroll(function (){
       if ($(this).scrollTop() > 300){
@@ -160,7 +161,7 @@ export default {
       $(".right-link2").toggleClass("on")
     });
   }
-}
+})
 
 </script>
 
