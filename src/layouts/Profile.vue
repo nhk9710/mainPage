@@ -5,6 +5,11 @@
         <div class="header">
           <div class="header-content">
             <p>Profile</p>
+            <div class="ham">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -12,8 +17,16 @@
       <div class="top-btn">
         <p>▲</p>
       </div>
-
       <div class="all-body">
+        <div class="modal">
+          <div class="modal-desc">
+            <h1 class="modal-title">👉INTRODUCE👈</h1>
+            <p>안녕하십니까~ 노호관입니다~</p>
+            <p>Carpe Diem</p>
+            <p>Spero Spera </p>
+            <p>veni, vidi, vici </p>
+          </div>
+        </div>
         <div class="body-container">
           <div class="body-content">
             <div class="first-content">
@@ -32,26 +45,63 @@
             </div>
 
             <div class="project-left">
-              <div class="project-picture"></div>
-              <p class="left-name">project1</p>
+                <div class="project-picture">
+                  <div class="picture-filter">
+                    <div class="picture-info">
+                      <h2 class="picture-title">(대충 프로젝트 설명)</h2>
+                    </div>
+                  </div>
+                </div>
+              <p class="left-name1">project1</p>
+              <p class="left-link1">Click this Link!👈</p>
             </div>
 
-            <div class="project-right">
-              <p class="right-name">project2</p>
-              <div class="project-picture"></div>
+          </div>
+        </div>
+            <div class="set-back">
+              <div class="body-container">
+                <div class="project-right">
+                  <p class="right-link1">👉Click this Link!</p>
+                  <p class="right-name1">project2</p>
+                  <div class="project-picture">
+                      <div class="picture-filter">
+                        <div class="picture-info">
+                          <h2 class="picture-title">project2</h2>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="project-left">
+                  <div class="project-picture">
+                      <div class="picture-filter">
+                        <div class="picture-info">
+                          <h2 class="picture-title">project3</h2>
+                        </div>
+                      </div>
+                  </div>
+                  <p class="left-name2">project3</p>
+                  <p class="left-link2">Click this Link!👈</p>
+                </div>
+              </div>
+
             </div>
 
-            <div class="project-left">
-              <div class="project-picture"></div>
-              <p class="left-name">project3</p>
-            </div>
-
-            <div class="project-right">
-              <p class="right-name">project4</p>
-              <div class="project-picture"></div>
+        <div class="body-container" style="padding-top: 0">
+          <div class="project-right">
+            <p class="right-link2">👉Click this Link!</p>
+            <p class="right-name2">project4</p>
+            <div class="project-picture">
+              <div class="picture-filter">
+                <div class="picture-info">
+                  <h2 class="picture-title">project4</h2>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+
       </div>
 
 
@@ -91,9 +141,25 @@ export default {
       $('html, body').animate({scrollTop:0},400);
       return false;
     });
+
+    $(".ham").click(function(){
+      $(this).toggleClass("active")
+      $(".modal").toggleClass("on")
+    });
+
+    $(".left-name1").click(function(){
+      $(".left-link1").toggleClass("on")
+    });
+    $(".left-name2").click(function(){
+      $(".left-link2").toggleClass("on")
+    });
+    $(".right-name1").click(function(){
+      $(".right-link1").toggleClass("on")
+    });
+    $(".right-name2").click(function(){
+      $(".right-link2").toggleClass("on")
+    });
   }
-
-
 }
 
 </script>
